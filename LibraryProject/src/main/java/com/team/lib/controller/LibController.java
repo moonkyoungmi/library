@@ -1038,6 +1038,8 @@ public class LibController {
 		com.execute(request, model);
 		com = new BookCommentViewCommand();
 		com.execute(request, model);
+		com = new BookBorrowInfoViewCommand();
+		com.execute(request, model);
 		
 		return "bookpage";
 	}
@@ -1052,6 +1054,8 @@ public class LibController {
 		com = new BookContentViewCommand();
 		com.execute(request, model);
 		com = new BookCommentViewCommand();
+		com.execute(request, model);
+		com = new BookBorrowInfoViewCommand();
 		com.execute(request, model);
 		
 		return "bookpage";

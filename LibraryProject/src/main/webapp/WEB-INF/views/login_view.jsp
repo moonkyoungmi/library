@@ -109,10 +109,10 @@ $(document).ready(function(){
 			url : $("#join_view").attr("href"),
 			type : "GET",
 			data : "",
-			success : function(data){ //회원가입을 누르면 해당 위치에 html 형식으로 페이지 데이터를 뿌린다
+			success : function(data){
 				$("#mainRegion").html(data);
 			},
-			error : function(){ //에러일 경우 숨겨진 modal 버튼을 클릭
+			error : function(){
 				alert("서버 접속 실패. 다시 시도해주세요.");
 			}
 		});
