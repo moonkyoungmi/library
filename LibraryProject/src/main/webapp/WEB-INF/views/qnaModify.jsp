@@ -45,7 +45,7 @@
 		</div>
 		<div class="col-10">
 			<div>
-				<h4 class="font-weight:bold;"><i class="far fa-question-circle" style="color:#527062"></i>&nbsp;질문작성</h4>
+				<h4 class="font-weight:bold;"><i class="far fa-question-circle" style="color:#527062"></i>&nbsp;질문수정</h4>
 				<br/>
 				<form action="qnaModify" method="post" id="qnaModify" name="qnaModify">
 					<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>

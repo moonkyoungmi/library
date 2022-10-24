@@ -1946,6 +1946,8 @@ public class LibController {
 		com.execute(request, model);
 		com = new UserBookReservationCommand();
 		com.execute(request, model);
+		com = new UserBookBorrowListCommand();
+		com.execute(request, model);
 		
 		return "borrowlist_view";
 	}

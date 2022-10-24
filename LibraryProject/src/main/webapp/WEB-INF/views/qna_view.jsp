@@ -208,7 +208,7 @@ $(document).ready(function(){
 	});
 	$(".qnaDel").click(function(event){
 		event.preventDefault();
-		if(confirm("질문을 수정하시겠습니까?") == true) {
+		if(confirm("질문을 삭제하시겠습니까?") == true) {
 			let no = $("#qnaNo").attr("value"); 
 			$.ajax({
 				url : "qnaDelete?qnaNo=" + no,

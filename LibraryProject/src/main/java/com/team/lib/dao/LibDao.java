@@ -842,7 +842,7 @@ public class LibDao implements ILibDao {
 		return result;
 	}
 	
-	//아이디 중복체크
+	//예약 5개 체크
 	@Override
 	public int reservation5Check(String reservationUser) {
 		int result = sqlSession.selectOne("reservation5Check", reservationUser);
